@@ -1,0 +1,36 @@
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.phonegap.example"
+        version     = "1.0.0"
+        versionCode = "10" >
+
+        <!-- versionCode is optional and Android only -->
+
+        <preference name="phonegap-version" value="3.5.0" />
+
+        <name>NdMetric Converter</name>
+
+        <description>
+			Endy Chuku's Metric Conversion App. 
+        </description>
+
+        <author href="http://www.uncc.edu" email="nchuku@uncc.edu">
+			Ndubueze Chuku (Endy)
+        </author>
+		
+		<gap:plugin name="org.apache.cordova.device" />
+		<icon src="BontuConvLogo2.png" width="96" height="96" gap:platform="android"/>
+		
+		<!-- default splash screen to use -->
+		<!-- Android -->
+		<gap:splash src="BontuConvFlash2.png" gap:platform="android" gap:density="ldpi" />
+		<gap:splash src="BontuConvFlash2.png" gap:platform="android" gap:density="mdpi" />
+		<gap:splash src="BontuConvFlash2.png" gap:platform="android" gap:density="hdpi" />
+		<gap:splash src="BontuConvFlash2.png" gap:platform="android" gap:density="xhdpi" /> 
+		
+		<!-- This makes a full screen-->
+		<preference name="fullscreen" value="true" />
+
+    </widget>

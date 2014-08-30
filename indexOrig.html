@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+	<title> Chuku Metric Converter </title>
+	<link rel="stylesheet" type="text/css" href="ChukuCss.css"/>
+</head>
+
+<body>
+	<div id="MainDiv" align="center" >
+	   <div class="header">
+			<h2>B</h2><h1>Metric Converter</h1>
+	   </div>
+	        <br />
+               <div id="GroupCat">				
+				<input type="text" id="UnitCat" style="text-align:right; padding-right:1%; margin:0% 0% 0% 2%;" readonly placeholder="Category display">
+        	      <div style="text-align:right; padding-right: 2%; margin:0px; font-weight:bold;"> Category: </div>		
+			   </div>
+		
+		<form name="unitSelect" method="get">		
+		 <table>		
+		<tr>
+			<br />	
+				<td colspan="2" id="textDisplay1"><input type="text" id="textField1" value="0" 
+					style="text-align:right; font-weight:bold; padding-right:1%" readonly>
+
+				</td>
+				<td colspan="2" id="textDisplay2"><input type="text" id="textField2" value="0" 
+					style="text-align:right; font-weight:bold; padding-right:1%" readonly>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+			<!--	<select name="dropDwn1" onchange='OnChange1(this.form.dropDwn1);'>-->
+				<select id="dropDwn1" >
+				 <option value="" disabled selected style="display: none;">Select your option</option>
+					<option value="1">Mile(s)</option>
+					<option value="2">Kilometer(s)</option>
+					<option value="3">Meter(s)</option>
+					<option value="4">Yard(s)</option>
+					<option value="5">Foot</option>
+					<option value="6">Inch(es)</option>
+					<option value="7">Pound(s)</option>
+					<option value="8">Metric Ton(s)</option>
+					<option value="9">Kilogram(s)</option>
+					<option value="10">Gram(s)</option>
+					<option value="11">US Gallon(s)</option>
+					<option value="12">Litre(s)</option>
+					<option value="13">US Quart(s)</option>
+					<option value="14">US Pint(s)</option>
+					<option value="15">US Ounce(s)</option>
+					<option value="16">US tbsp(s)</option>
+					<option value="17">US tsp(s)</option>
+					<option value="18">Celcius</option>
+					<option value="19">Fahrenheit</option>
+					<option value="20">Kelvin</option>
+				</select>
+				</td>
+				<td colspan="2">
+				<!--<select name="dropDwn2" onchange='OnChange2(this.form.dropDwn2);'>-->
+				<select id="dropDwn2" >
+					<option value="" disabled selected style="display: none;">Select your option</option>
+					<option value="1">Mile(s)</option>
+					<option value="2">Kilometer(s)</option>
+					<option value="3">Meter(s)</option>
+					<option value="4">Yard(s)</option>
+					<option value="5">Foot</option>
+					<option value="6">Inch(es)</option>
+					<option value="7">Pound(s)</option>
+					<option value="8">Metric Ton(s)</option>
+					<option value="9">Kilogram(s)</option>
+					<option value="10">Gram(s)</option>
+					<option value="11">US Gallon(s)</option>
+					<option value="12">Litre(s)</option>
+					<option value="13">US Quart(s)</option>
+					<option value="14">US Pint(s)</option>
+					<option value="15">US Ounce(s)</option>
+					<option value="16">US tbsp(s)</option>
+					<option value="17">US tsp(s)</option>
+					<option value="18">Celcius</option>
+					<option value="19">Fahrenheit</option>
+					<option value="20">Kelvin</option>
+				</select>
+				</td>				
+			</tr>
+			<tr>
+			   <td><input type="button" id="textField"  value=6 onclick="addToField(6)"></td>
+			   <td><input type="button" id="textField"  value=7 onclick="addToField(7)"></td>
+			   <td><input type="button" id="textField"  value=8 onclick="addToField(8)"></td>
+			   <td><input type="button" id="textField"  value=9 onclick="addToField(9)"></td>
+			</tr>
+			<tr>
+			   <td><input type="button" id="textField"  value=2 onclick="addToField(2)"></td>
+			   <td><input type="button" id="textField"  value=3 onclick="addToField(3)"></td>
+			   <td><input type="button" id="textField"  value=4 onclick="addToField(4)"></td>
+			   <td><input type="button" id="textField"  value=5 onclick="addToField(5)"></td>
+			</tr>
+			<tr>
+			   <td><input type="button" id="textField"  value=1 onclick="addToField(1)"></td>			
+			   <td><input type="button" id="textField"  value=0 onclick="addToField(0)"></td>
+			   <td><input type="button" id="textField"  value='.'   onclick="addToField('.')"></td>
+			   <td><button type="button" id="BckSpaceButton" onclick="backUPOne()"><img id="bckImg" src='backspace.jpg' width=12, height=15 /> </button></td>
+			</tr>
+			<tr>
+			   <td><input type="button" value='' id="textField"  onclick="addToField('')"></td>
+			   <td><input type="button" value='' id="textField"  onclick="addToField('')"></td>
+			   <td><input type="reset" id="resetButton"  value='C' onclick="clrScr()"></td>
+			   <!--<td><input type="submit" id="convButton" value="="></td>-->
+			   <td><input type="button" id="convButton" value="=" onclick="myconvert()"></td>
+			</tr>
+
+		 </table>	 
+		 </form>
+	</div>
+    <script src="ConvScript.js"></script>	
+</body>
+
+</html>

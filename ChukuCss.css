@@ -1,0 +1,138 @@
+ h2
+{
+  font: 40px Brush Script MT;
+  color: yellow;
+  margin: 0px 2px 0px 10px;
+  float: left;
+ }
+ 
+h1
+{
+  font: 20px tahoma;
+  color: yellow;
+  margin: 15px 5px 5px 5px;
+  /*margin: 2.5% 2% 2% 1%;*/
+  float: left;
+ }
+ 
+
+ body
+{
+  margin:0;
+  padding:0;
+  height: 100%;
+}
+ 
+ .header
+ {
+  width:100%;
+  height:100%;
+  padding-top:1%;   
+ }
+ 
+ #MainDiv
+{
+ background: darkblue;
+ width: 95%;
+ height: 96%;  /*optional*/
+ margin: 10px auto;
+ box-shadow: 10px 10px 15px grey;
+ padding-top: 1.5%;
+ padding-bottom: 1.5%;
+ }
+ 
+#MainDiv table
+{
+ width: 96%;
+ /*height: 400px;
+ height:96%;*/
+ padding-left: 1%;
+ padding-right: 1%;
+ padding-bottom: 2%;
+ }
+ 
+ #GroupCat
+ {
+	float: right;
+	width: 50%;
+	/*background: darkblue;*/
+	margin:0% 3.2% 1% auto;
+	font: 100% Brush Script MT;
+	color: white;
+ }
+ 
+ #GroupCat input
+ {
+	float: right;
+	width: 50%;
+	padding-left: 2%;
+	padding-right: 2%;
+	font: 96% Brush Script MT;
+	color: grey;
+ }
+ 
+ #textField
+ {
+  width:100%;
+  height: 50%;
+ }
+ 
+ #textField1
+ {
+  width:98%;
+  height: 40%;
+ }
+ 
+ #textField2
+ {
+  width:98%;
+  height: 40%;
+ }
+
+select
+ {
+  width:100%;
+  height: 40%;
+ }
+ 
+ button{
+ width: 100%;
+ height: 40%;
+ }
+ 
+ input[type="button"], input[type="reset"], input[type="submit"], button[type="button"]
+ {
+	opacity: 0.8;
+	outline: none;
+	border: 0px;
+	background: white;
+	font: 16px tahoma;
+	width: 100%;
+	/*height: 30px;*/
+	height: 50%;
+ }
+ 
+ #convButton
+ {
+  float: bottom;
+ }
+
+input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"], button:hover[type="button"]
+ {
+	opacity: 0.4;
+	filter: alpha(opacity=60);
+	box-shadow: 2px 2px 2px blue;
+ }
+ 
+ input:hover[type="text"]
+ {
+	opacity: 1;
+	background: lightyellow;
+ }
+ 
+ #bckImg{
+	opacity: 0.8;
+	filter: alpha(opacity=40);
+ }
+ 
+

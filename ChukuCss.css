@@ -20,32 +20,29 @@ h1
 {
   margin:0;
   padding:0;
-  height: 100%;
 }
  
  .header
  {
   width:100%;
-  height:100%;
-  padding-top:1%;   
+  height:20px;
+  padding-top:5px; 
  }
  
  #MainDiv
 {
  background: darkblue;
  width: 95%;
- height: 96%;  /*optional*/
+ height: auto;
  margin: 10px auto;
  box-shadow: 10px 10px 15px grey;
- padding-top: 1.5%;
- padding-bottom: 1.5%;
+ padding-top: 5px;
+ padding-bottom: 5px;
  }
  
 #MainDiv table
 {
  width: 96%;
- /*height: 400px;
- height:96%;*/
  padding-left: 1%;
  padding-right: 1%;
  padding-bottom: 2%;
@@ -54,9 +51,9 @@ h1
  #GroupCat
  {
 	float: right;
-	width: 50%;
+	width: 60%;
 	/*background: darkblue;*/
-	margin:0% 3.2% 1% auto;
+	margin:0% 3% 1% auto;
 	font: 100% Brush Script MT;
 	color: white;
  }
@@ -74,49 +71,47 @@ h1
  #textField
  {
   width:100%;
-  height: 50%;
  }
  
  #textField1
  {
-  width:98%;
-  height: 40%;
+  width:99%;
  }
  
  #textField2
  {
-  width:98%;
-  height: 40%;
+  width:99%;
  }
 
 select
  {
   width:100%;
-  height: 40%;
  }
  
  button{
  width: 100%;
- height: 40%;
  }
  
  input[type="button"], input[type="reset"], input[type="submit"], button[type="button"]
  {
 	opacity: 0.8;
-	outline: none;
 	border: 0px;
 	background: white;
 	font: 16px tahoma;
 	width: 100%;
-	/*height: 30px;*/
-	height: 50%;
+	height: 30px;
  }
  
- #convButton
+ input[type="text"]
  {
-  float: bottom;
+	border: 0px;
+	outline: none;
+	opacity: 0.8;
+	background: #F8DE7E; /*#bccd95;*/
+	width: 100%;
+	height: 30px;
  }
-
+ 
 input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"], button:hover[type="button"]
  {
 	opacity: 0.4;

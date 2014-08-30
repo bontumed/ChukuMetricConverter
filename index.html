@@ -6,7 +6,7 @@
 </head>
 
 <body>
-	<div id="MainDiv" align="center">
+	<div id="MainDiv" align="center" >
 	   <div class="header">
 			<h2>B</h2><h1>Metric Converter</h1>
 	   </div>
@@ -16,8 +16,8 @@
         	      <div style="text-align:right; padding-right: 2%; margin:0px; font-weight:bold;"> Category: </div>		
 			   </div>
 		
-		<form name="unitSelect" method="get" >		
-		 <table >		
+		<form name="unitSelect" method="get">		
+		 <table>		
 		<tr>
 			<br />	
 				<td colspan="2" id="textDisplay1"><input type="text" id="textField1" value="0" 
@@ -99,13 +99,15 @@
 			<tr>
 			   <td><input type="button" id="textField"  value=1 onclick="addToField(1)"></td>			
 			   <td><input type="button" id="textField"  value=0 onclick="addToField(0)"></td>
-			   <td><input type="button" id="textField"  value='.' onclick="addToField('.')"></td>
-			   <td rowspan="2"><input type="button" id="convButton" value="=" style="height:47px;" onclick="myconvert()"></td>
+			   <td><input type="button" id="textField"  value='.'   onclick="addToField('.')"></td>
+			   <td><button type="button" id="BckSpaceButton" onclick="backUPOne()"><img id="bckImg" src='backspace.jpg' width=12, height=15 /> </button></td>
 			</tr>
 			<tr>
-			   <td><input type="button" id="textField" value=' ' onclick="addToField('')"></td>
-			   <td><button type="button" id="BckSpaceButton" onclick="backUPOne()"><img id="bckImg" src='backspace.jpg' width=12, height=15 /> </button></td>
+			   <td><input type="button" value='' id="textField"  onclick="addToField('')"></td>
+			   <td><input type="button" value='' id="textField"  onclick="addToField('')"></td>
 			   <td><input type="reset" id="resetButton"  value='C' onclick="clrScr()"></td>
+			   <!--<td><input type="submit" id="convButton" value="="></td>-->
+			   <td><input type="button" id="convButton" value="=" onclick="myconvert()"></td>
 			</tr>
 
 		 </table>	 
